@@ -1,68 +1,33 @@
-# Product Manager Portfolio
 
-A modern, responsive portfolio website for Product Managers built with HTML, CSS, and JavaScript.
 
-## Features
+<!--
+  <<< Author notes: Step 2 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
+  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
+-->
 
-- Clean, minimalist design
-- Fully responsive layout
-- Dark/Light mode toggle
-- Smooth scrolling navigation
-- Dynamic project showcase
-- Contact form
-- Social media integration
+## Step 2: Configure your site
 
-## How to Customize
+_You turned on GitHub Pages! :tada:_
 
-### Personal Information
-1. Open `index.html` and update:
-   - Name in the hero section
-   - Title and tagline
-   - About section content
-   - Social media links
-   - Footer copyright information
+We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
 
-### Projects
-1. Edit the `config.js` file to update your projects:
-   - Add/remove projects in the `projects` array
-   - Update project titles, descriptions, and links
-   - Add relevant tools and technologies used
-   - Add project images to the `images` folder
+Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
 
-### Styling
-1. Customize colors and theme in `style.css`:
-   - Update the `:root` variables for light theme
-   - Update the `[data-theme="dark"]` variables for dark theme
-   - Modify other styles as needed
+We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
 
-### Images
-1. Create an `images` folder in the root directory
-2. Add your project images and update the image paths in `config.js`
-3. Recommended image size for projects: 800x600 pixels
+### :keyboard: Activity: Configure your site
 
-## Deployment to GitHub Pages
+1. Browse to the `_config.yml` file in the `my-pages` branch.
+1. In the upper right corner, open the file editor.
+1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
+   ```yml
+   theme: minima
+   ```
+1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
+1. Commit your changes.
+1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
+1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
 
-1. Create a new repository on GitHub
-2. Push your code to the repository
-3. Go to repository Settings > Pages
-4. Under "Source", select the main branch
-5. Click "Save"
-6. Your portfolio will be available at `https://[your-username].github.io/[repository-name]`
 
-## Local Development
-
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Make changes and test locally
-4. Push changes to GitHub to update the live site
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE). 
